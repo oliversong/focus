@@ -1,3 +1,3 @@
-#RAGE MODE GO
+# Focus
 
-Herpa derp
+Chrome plugin for toggling blocking of sites that aren't productive.
