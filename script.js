@@ -25,9 +25,9 @@ function blockDat(){
 	var block = document.createElement('div');
 	block.setAttribute('style',"display:block;width:100%;height:100%;z-index:9998;position:fixed;left:0px;top:0px;background-color:#000;opacity:.9;");
 	var message = document.createElement('div');
-	var mytext=document.createTextNode('STOP PROCRASTINATING');
+	var mytext=document.createTextNode('FOCUS');
 	message.appendChild(mytext);
-	message.setAttribute('style',"width:50%;top:25%;left:25%;border-radius:3px;z-index:9999;position:fixed;background-color:#DDD;opacity:1;text-align:center;font-size:90px;font-family:Helvetica;height:100px;padding-top:60px;padding-bottom:50px;line-height:90px !important;");
+	message.setAttribute('style',"width:50%;top:25%;left:25%;border-radius:3px;z-index:9999;position:fixed;background-color:#DDD;opacity:1;text-align:center;font-size:90px;font-family:Helvetica;height:100px;padding-top:60px;padding-bottom:50px;line-height:90px !important;color:#333 !important;");
 	document.getElementsByTagName("body")[0].appendChild(block);
 	document.getElementsByTagName("body")[0].appendChild(message);
 	//$('body').append('<div style="display:block;width:100%;height:100%;z-index:9998;position:fixed;left:0px;top:0px;background-color:#000;opacity:.9;"></div>');

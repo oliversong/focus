@@ -1,7 +1,7 @@
 {
   "name": "Focus",
   "version": "1.2",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "description": "Extension to stop procrastination.",
   "background": { "scripts": ["background.js"] },
   "icons":{
