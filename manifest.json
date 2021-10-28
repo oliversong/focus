@@ -1,7 +1,7 @@
 {
-  "name": "Rage Mode",
-  "version": "1.1",
-  "manifest_version": 2,
+  "name": "Focus",
+  "version": "1.2",
+  "manifest_version": 3,
   "description": "Extension to stop procrastination.",
   "background": { "scripts": ["background.js"] },
   "icons":{
@@ -10,11 +10,9 @@
     "128":"icon128.png"
   },
   "permissions": [
-    "cookies",
-    "tabs", "http://*/*", "https://*/*"
   ],
   "browser_action": {
-    "name": "Rage Mode",
+    "name": "Focus",
     "default_icon": "icon.png"
   },
   "content_scripts":[{
