@@ -1,4 +1,4 @@
-chrome.extension.sendMessage({check:"what"},function(response){
+chrome.runtime.sendMessage({check:"what"},function(response){
 	if(response.answer=='yes'){
 		injectjs('script.js');
 		//injectcss('shoop.css');
@@ -7,7 +7,7 @@ chrome.extension.sendMessage({check:"what"},function(response){
 
 function injectjs(name){
 	var s = document.createElement('script');
-	s.src = chrome.extension.getURL(name);
+	s.src = chrome.runtime.getURL(name);
 	s.onload = function() {
 	    this.parentNode.removeChild(this);
 	};
@@ -15,7 +15,7 @@ function injectjs(name){
 }
 
 function injectcss(name){
-	var path = chrome.extension.getURL(name);
+	var path = chrome.runtime.getURL(name);
 	style = '<link rel="stylesheet" href="'+path+'" type="text/css" media="screen">'
 	parser = new DOMParser();
 	stylenode = parser.parseFromString(style,"text/xml");
