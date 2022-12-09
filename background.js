@@ -1,7 +1,4 @@
-chrome.action.setTitle({'title':'Off'});
-
 function toggleIcon(){
-  console.log("WAJTIOEAJOIA");
 	chrome.action.getTitle({},function(title){
 		if(title=='On'){
 			chrome.action.setTitle({'title':'Off'});
